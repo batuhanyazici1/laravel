@@ -88,7 +88,7 @@ class CustomAuthController extends Controller
     public function dashboard()
     {
         if(Auth::check()){
-            return view('user-dashboard');
+            return view('index');
         }
   
         return redirect("signin")->withSuccess('You are not allowed to access');
